@@ -4,20 +4,22 @@ public class subArrays {
 
     public static void printSubArr(int numbers[]){
         int ts=0;
-        int minsum= Integer.MAX_VALUE;
-        int maxsum= Integer.MIN_VALUE;
+        int minsum= Integer.MAX_VALUE; //TO find min sub array sum
+        int maxsum= Integer.MIN_VALUE; //To find max sub array sum
         for(int i=0;i<numbers.length;i++){
             for(int j=i;j<numbers.length;j++){
                 int sum=0;
                 for(int k=i;k<=j;k++){
                     System.out.print(numbers[k]+" ");
                     sum=sum+numbers[k];
-                    if (sum < minsum) {
+                }
+                // TO find min sub Array sum
+                if (sum < minsum) {
                         minsum = sum;
                     }
-                    if(sum > maxsum){
-                        maxsum = sum;
-                    }
+                //To Find Max sub Array sum
+                if(sum > maxsum){
+                    maxsum = sum;
                 }
                 System.out.println(";& sum = " + sum);
                 ts++;
