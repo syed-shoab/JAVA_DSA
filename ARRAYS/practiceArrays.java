@@ -1,6 +1,6 @@
 package ARRAYS;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 public class practiceArrays {
@@ -38,6 +38,7 @@ public class practiceArrays {
         int key = sc.nextInt();
         // repetition(numbers);
         findkey(numbers, key);
+        sc.close();
 
     }
 }
