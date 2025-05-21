@@ -8,9 +8,9 @@ public class largestNum{
             if(largest < numbers[i]){
                 largest = numbers[i];
             }
-            // if(smallest > numbers[i]){
-            //     smallest = numbers[i];
-            // }  
+        //     // if(smallest > numbers[i]){
+        //     //     smallest = numbers[i];
+        //     // }  
         }
         return largest;
         // return smallest;
